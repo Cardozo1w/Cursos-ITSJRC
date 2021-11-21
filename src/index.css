@@ -1,13 +1,164 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100vh !important;
+}
+
+.vertical-layout {
+  height: 100vh;
+}
+
+.vertical-layout .content {
+  margin: 0 auto !important;
+  height: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  text-align: left;
+}
+
+label {
+  text-align: left;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.btn-buscar input {
+  margin-bottom: 10px;
+  flex-basis: 70% !important;
+  justify-content: space-between !important;
+}
+
+.btn-buscar button {
+  flex-basis: 25% !important;
+}
+
+@media (min-width: 992px) {
+  .btn-buscar {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .btn-buscar input {
+    margin: 0;
+    flex-basis: 70% !important;
+    margin-right: 10px;
+  }
+
+  .btn-buscar button {
+    flex-basis: 25% !important;
+  }
+}
+
+.btn-primary {
+  background-color: #1b396a !important;
+}
+
+.btn-primary:hover {
+  background-color: #3b5d94 !important;
+}
+
+.app-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.correcto {
+  border-color: green !important;
+}
+
+.bg-authentication #icon-arrow {
+  right: 15px !important;
+  left: auto !important;
+}
+
+.success {
+  text-align: center;
+  background-color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.cursos {
+  text-align: left;
+  color: #475f7b;
+  border: 1px solid #1b396a;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.success h1 {
+  font-size: 20px;
+}
+
+.success h3,
+.success h2 {
+  font-size: 16px;
+  color: #000;
+}
+
+.success p {
+  margin-bottom: 5px;
+}
+
+.success i {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .success {
+    padding: 50px 100px;
+  }
+
+  .success i {
+    font-size: 150px;
+    margin-bottom: 20px;
+  }
+
+  .success h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .success h2 {
+    text-align: left;
+    font-size: 23px;
+  }
+
+  .success h3 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .cursos {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+
+.btn-search .fa-search {
+  top: 0 !important;
 }
