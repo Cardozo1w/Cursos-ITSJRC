@@ -17,7 +17,7 @@ const Formulario = () => {
 
     try {
       const { data } = await axios.get(
-        `https://itsjrctalleres.duckdns.org/student/${matricula}`
+        `https://itsjrctalleres.duckdns.org/student/${matricula.toUpperCase()}`
       );
       setAlumno(data);
       setDisabled(false);
